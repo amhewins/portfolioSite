@@ -1,0 +1,220 @@
+body {
+  font-family: Helvetica;
+  color: #2A2A2A;
+  background: #fff9f8; /* Old browsers */
+  background: -moz-linear-gradient(top, #fff9f8 0%, #fff9f8 65%, #d6f1f7 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fff9f8 0%,#fff9f8 65%,#d6f1f7 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fff9f8 0%,#fff9f8 65%,#d6f1f7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff9f8', endColorstr='#d6f1f7',GradientType=0 ); /* IE6-9 */
+}
+.container-fluid {
+  padding: 0 150px;
+}
+.body-content {
+  min-height: 75vh;
+  position: relative;
+}
+/* Menu Styles */
+.navbar {
+  background-color: transparent;
+}
+.navbar-item img {
+  max-height: 60px;
+  min-height: 60px;
+}
+.header-navigation-container {
+  width: 100%;
+  z-index: 3;
+}
+.header-navigation-container ul {
+  list-style-type: none;
+}
+.header-navigation-container li {
+  display: inline-flex;
+}
+.header-navigation-container a {
+  color: #2A2A2A;
+  padding: 10px 15px 8px 15px;
+  font-size: 15px;
+  font-weight: 300;
+}
+.navbar-brand a:hover {
+  background-color: transparent !important;
+}
+.header-navigation-container a:hover {
+  background-color: transparent;
+  padding: 10px 15px 8px 15px;
+  color: #2BACB0;
+}
+.navbar-burger {
+  height: auto;
+}
+.navbar-burger span {
+  height: 2px;
+}
+.navbar-burger:hover {
+  background-color: rgba(31, 31, 31, 0.6);
+}
+.mobile-nav-styles a {
+  color: black;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.navbar-menu a:focus {
+  color: #69CFE2;
+  border: 1px dashed black;
+}
+.navbar.container {
+  margin: 0 !important;
+  width: 100%;
+}
+.navbar-menu.is-active {
+  position: absolute;
+  width: 100%;
+  z-index: 400;
+}
+.button {
+  border: none !important;
+}
+button {
+  border: none;
+  color: #2A2A2A;
+  background-color: transparent;
+  font-weight: 300;
+  font-size: 1rem;
+  padding-top: 15px;
+}
+button:hover {
+  color: #69CFE2;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:focus {
+  color: #69CFE2;
+  font-weight: 600;
+}
+a {
+  font-weight: 300;
+  color: black;
+}
+
+.nav-ul li {
+  list-style-type: none;
+}
+.nav-ul li a {
+  color: black;
+  text-decoration: none;
+}
+.navbar-link::after {
+  right: 1%;
+  border: 1px solid #69CFE2;
+  border-right: 0;
+  border-top: 0;
+}
+
+.section {
+  padding: 50px 0;
+}
+.single-section {
+  text-align: center;
+  padding: 15px 0 !important;
+}
+.breakout-section {
+  width: 100vw;
+  position: relative;
+  left: calc(-1 * (100vw - 100%) / 2);
+}
+.section-title {
+  padding-bottom: 25px;
+}
+
+.capability-name {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 300;
+}
+.capability-description {
+  color: #2A2A2A;
+  font-weight: 300;
+  padding-bottom: 4.5rem;
+}
+
+.column.link:hover {
+  background-color: #69CFE2;
+}
+.column.link:hover h4 {
+  color: black;
+}
+
+.card-content {
+  padding: 1rem;
+}
+.content h2 {
+  font-weight: 300;
+  color: black;
+}
+.content h4 {
+  margin-bottom: 0 !important;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.content ul {
+  margin: 0 !important;
+  list-style: none !important;
+}
+
+footer {
+  padding: 20px 150px 10px 150px;
+  background-color: #69CFE2;
+}
+.footer-title {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 300;
+}
+.footer-content {
+  font-weight: 300;
+}
+
+@media screen and (max-width: 840px) {
+  .container-fluid {
+    padding: 5px 60px 0 60px;
+  }
+  .section {
+    padding: 15px 0 0 0;
+  }
+  .button {
+    background-color: transparent;
+  }
+  .capability-name {
+    padding: 1rem 0;
+  }
+  .capability-description {
+    padding: 0 0 .5rem 0;
+  }
+  .card-content {
+    padding: 0 1rem;
+  }
+}
+@media screen and (max-width: 425px ) {
+  .container-fluid {
+    padding: 10px 20px 0 20px;
+  }
+  .button {
+    background-color: transparent;
+  }
+  .navbar-item img {
+    max-height: 45px;
+    min-height: 45px;
+  }
+  .section {
+    padding: 25px 0 0 0;
+  }
+  .capability-description {
+    padding-bottom: 0;
+  }
+  .card-content {
+    padding: 0 1rem;
+  }
+}
